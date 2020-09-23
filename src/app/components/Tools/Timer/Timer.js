@@ -53,8 +53,10 @@ class Timer extends Component {
   };
 
   handleResetTime = ()=> {
+    clearInterval(this.timer)
     this.setState({
       time: 0,
+      on: false,
     });
   };
 
